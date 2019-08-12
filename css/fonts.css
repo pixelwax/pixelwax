@@ -1,0 +1,36 @@
+/* DEFAULT */
+@font-face {
+    font-family: default-font;
+    src: url(../fonts/opensans-regular.woff);
+    font-weight: 400;
+}
+@font-face {
+    font-family: default-font;
+    src: url(../fonts/opensans-bold.woff);
+    font-weight: 700;
+}
+@font-face {
+    font-family: default-font;
+    src: url(../fonts/opensans-light.woff);
+    font-weight: 300;
+}
+
+/* HEADING */
+@font-face {
+    font-family: heading-font;
+    src: url(../fonts/Oswald-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: heading-font;
+    src: url(../fonts/Oswald-Bold.woff);
+    font-weight: 700;
+}
+
+/* ICON */
+@font-face {
+    font-family: icon-font;
+    src: url(../fonts/fontawesome-webfont.woff);
+    font-weight: 400;
+}
