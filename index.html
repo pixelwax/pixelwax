@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <!-- HTML -->
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="icons/152x152.png">
+    <meta name="msapplication-TileImage" content="icons/144x144.png">
+    <meta name="msapplication-TileColor" content="#1A1A1A">
+    <meta name="theme-color" content="#0eb5ed">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
+</head>
+
+<body class="no-js">
+    
+    <script>
+        (function($){
+            $('body').removeClass('no-js');
+        })(jQuery);
+    </script>
+	
+    <header class="row">
+        <div class="inner">
+            <a class="logo"><img src="img/logo.png" alt="Company Name"></a>
+        </div>
+    </header>
+    
+    <main>
+	
+	<nav id="main-menu" class="row">
+		<div class="inner">
+			<button class="menu-toggle">Menu</button>
+            <ul class="menu">
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 3</a></li>
+                <li><a>Item 4</a></li>
+                <li><a>Item 5</a></li>
+                <li><a>Item 6</a></li>
+            </ul>
+		</div>
+	</nav>
+        
+    <script>
+        (function($){
+            
+            $('#main-menu .menu-toggle').on('click', function(event){
+                $('#main-menu .menu').stop().slideToggle('fast');
+            });
+            
+            $(window).resize(function(){
+                if($('#main-menu .menu-toggle').is(':hidden')){
+                    $('#main-menu .menu').removeAttr('style');
+                }
+            });
+            
+        })(jQuery);
+    </script>
+    
+    <section id="welcome" class="row">
+		<div class="inner">
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra sem nec fringilla rhoncus. Mauris rhoncus, leo eget pellentesque rhoncus, dui velit bibendum lacus, eu feugiat nibh tortor non mi. Proin lobortis tempus nulla, eu pretium dui convallis ac. Nunc in mi lorem. In hac habitasse platea dictumst. Duis blandit congue dictum. Vestibulum tincidunt dui at ex pharetra rhoncus. Nunc at iaculis ipsum. Pellentesque ut odio convallis, dapibus felis vel, posuere mi. Nunc a urna luctus, vulputate enim a, tempus ex. Nullam eu lectus vel nisi interdum egestas sed at turpis.</p>
+			<p>Donec vel nunc et libero dignissim feugiat. Mauris vulputate ultrices luctus. Vestibulum eleifend cursus tristique. Quisque ut egestas velit. Etiam lectus eros, ullamcorper eu luctus eget, egestas sed massa. Cras accumsan massa non felis ultrices, id sodales neque efficitur. Vivamus quis sagittis diam. In eu ante tristique tortor interdum mollis. Quisque commodo, tellus et faucibus scelerisque, ante erat mattis sem, sit amet auctor felis ligula eu lectus.</p>
+		</div>
+    </section>
+        
+    </main>
+    
+    <footer class="row">
+        <div class="inner">
+            <form>
+                <label>Label</label>
+                <input type="text">
+                <button>Submit</button>
+            </form>
+        </div>
+	</footer>
+   
+</body>
+
+</html>
+
